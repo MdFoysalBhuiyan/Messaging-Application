@@ -13,3 +13,18 @@ C:\Users\Ifti Ahmed\Desktop\All Codes\VS\Projects\Messaging Application\Messagin
 C:\Users\Ifti Ahmed\Desktop\All Codes\VS\Projects\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Sign_Up.resources
 C:\Users\Ifti Ahmed\Desktop\All Codes\VS\Projects\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Form2.resources
 C:\Users\Ifti Ahmed\Desktop\All Codes\VS\Projects\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Setting.resources
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\bin\Debug\Messaging Application.exe.config
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\bin\Debug\Messaging Application.exe
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\bin\Debug\Messaging Application.pdb
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.csproj.AssemblyReference.cache
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.exe.config
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Form1.resources
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Form2.resources
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Properties.Resources.resources
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Setting.resources
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Sign_in_form.resources
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Sign_Up.resources
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.csproj.GenerateResource.cache
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.csproj.CoreCompileInputs.cache
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.exe
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.pdb

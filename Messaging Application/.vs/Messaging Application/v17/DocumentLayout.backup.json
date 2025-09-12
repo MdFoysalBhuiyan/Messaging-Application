@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\Messaging Application.csproj|c:\\users\\ifti ahmed\\desktop\\all codes\\github\\messaging-application\\messaging application\\messaging application\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\Messaging Application.csproj|solutionrelative:messaging application\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\Messaging Application.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\Messaging Application.csproj|solutionrelative:messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Chat.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Chat.cs",
+              "RelativeDocumentMoniker": "Messaging Application\\Chat.cs",
+              "ToolTip": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Chat.cs [Design]",
+              "RelativeToolTip": "Messaging Application\\Chat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T15:32:07.078Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sign_Up.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_Up.cs",
+              "RelativeDocumentMoniker": "Messaging Application\\Sign_Up.cs",
+              "ToolTip": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_Up.cs [Design]",
+              "RelativeToolTip": "Messaging Application\\Sign_Up.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T15:32:03.156Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
