@@ -7,26 +7,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace Messaging_Application
 {
     public partial class Sign_Up : Form
     {
-        //private string ImageLocation;
+        private string constring;
 
+        DataAcess dataAccess;
         public Sign_Up()
         {
             InitializeComponent();
+            dataAccess = new DataAcess();
         }
 
-        private void btn_signUp_Click(object sender, EventArgs e)
+        //private string ImageLocation;
+
+       /* public Sign_Up()
         {
+            InitializeComponent();
+        }
+       */
+
+        //string constring = "Data Source=DESKTOP-ECS1L4V\SQLEXPRESS;Initial Catalog=Text;Integrated Security=True;Trust Server Certificate=True";
+        private void btn_signUp_Click(object sender, EventArgs e)  //sign up button
+        {
+            if (pictureBox2.Image == null)
+            {
+                MessageBox.Show("Select Photo");
+            }
+
+
             if (string.IsNullOrEmpty(pictureBox2.ImageLocation))
             {
-                MessageBox.Show("Please select an image first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select an image first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            else if (string.IsNullOrEmpty(tbFullname.Text) || string.IsNullOrEmpty(tb_password.Text) || string.IsNullOrEmpty(tb_con_pass.Text)|| string.IsNullOrEmpty(tb_email.Text) )
+            else if (string.IsNullOrEmpty(tbFullname.Text) || string.IsNullOrEmpty(tb_password.Text) || string.IsNullOrEmpty(tb_con_pass.Text) || string.IsNullOrEmpty(tb_email.Text))
             {
                 MessageBox.Show("Please fill in all fields.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -45,9 +64,39 @@ namespace Messaging_Application
                 Image = pictureBox2.ImageLocation
             };
 
+            //database code temporary
+            SqlConnection con = new SqlConnection(constring);
+            string q = "Insert into Sign_Up(Full_Name,Email,Password,Confirm_Password,Image)values(@Full_Name,@Email,@Password,@Confirm_Passord,@Image)";
+            SqlCommand cmd = new SqlCommand(q, con); //con is local variable here
+            MemoryStream ms = new MemoryStream();
+
+            pictureBox2.Image.Save(ms, pictureBox2.Image.RawFormat);
+
+            cmd.Parameters.AddWithValue("@Full_Name", tbFullname.Text); //user1.Username is same as tbFullname.Text
+            cmd.Parameters.AddWithValue("@Email", tb_email.Text);
+            cmd.Parameters.AddWithValue("@Password", tb_password.Text);
+            cmd.Parameters.AddWithValue("@Confirm_Passord", tb_con_pass.Text);
+            //cmd.Parameters.AddWithValue("@Image", ms.ToArray());
+
+
+            int results = dataAccess.ExecuteNonQuery(q);
+            if (results > 0)
+            {
+                MessageBox.Show("Registration Success.");
+            }
+            else
+            {
+                MessageBox.Show("Registration Failed.");
+            }
+
             Form2 form2 = new Form2();
             form2.Show();
             this.Hide();
+
+            //con.Open();
+            //cmd.ExecuteNonQuery();
+            //con.Close();
+            //MessageBox.Show("Sign up Successfully");
 
         }
 
@@ -59,7 +108,7 @@ namespace Messaging_Application
         private void btm_picture_Click(object sender, EventArgs e)
         {
             //string ImageLocation = string.Empty;
-            string ImageLocation = "";
+            //string ImageLocation = "";
             try
             {
                 OpenFileDialog dialog = new OpenFileDialog();
@@ -76,6 +125,7 @@ namespace Messaging_Application
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
         private void Sign_Up_Load(object sender, EventArgs e)
         {
