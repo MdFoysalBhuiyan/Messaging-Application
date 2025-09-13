@@ -16,5 +16,10 @@ namespace Messaging_Application
         {
             InitializeComponent();
         }
+
+        private void Chat_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
