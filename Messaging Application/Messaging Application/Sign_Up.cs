@@ -34,11 +34,11 @@ namespace Messaging_Application
         //string constring = "Data Source=DESKTOP-ECS1L4V\SQLEXPRESS;Initial Catalog=Text;Integrated Security=True;Trust Server Certificate=True";
         private void btn_signUp_Click(object sender, EventArgs e)  //sign up button
         {
-            if (pictureBox2.Image == null)
+            /*if (pictureBox2.Image == null)
             {
                 MessageBox.Show("Select Photo");
             }
-
+            */
 
             if (string.IsNullOrEmpty(pictureBox2.ImageLocation))
             {

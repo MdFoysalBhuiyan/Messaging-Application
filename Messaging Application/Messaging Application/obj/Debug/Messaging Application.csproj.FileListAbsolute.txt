@@ -29,3 +29,4 @@ C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging App
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.pdb
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Chat.resources
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.UserControl1.resources
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.UserControl2.resources
