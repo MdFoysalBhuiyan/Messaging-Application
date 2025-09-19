@@ -42,6 +42,8 @@
             this.btn_Exit = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btm_picture = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -191,11 +193,34 @@
             this.btm_picture.Text = "UPLOAD";
             this.btm_picture.Click += new System.EventHandler(this.btm_picture_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Admin",
+            "Support",
+            "Customer"});
+            this.comboBox1.Location = new System.Drawing.Point(1119, 400);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 17;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1116, 365);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 15);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Select User";
+            // 
             // Sign_Up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btm_picture);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
@@ -206,6 +231,7 @@
             this.Controls.Add(this.con_pass);
             this.Controls.Add(this.pass);
             this.Controls.Add(this.mail);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.name);
             this.Controls.Add(this.btn_signUp);
             this.Controls.Add(this.btn_Exit);
@@ -238,5 +264,7 @@
         private System.Windows.Forms.Label btn_Exit;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label btm_picture;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
