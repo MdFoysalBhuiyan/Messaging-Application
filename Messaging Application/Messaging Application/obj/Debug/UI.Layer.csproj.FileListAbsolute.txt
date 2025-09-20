@@ -21,3 +21,4 @@ C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging App
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.exe
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.pdb
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.exe.config
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Texting_page.resources

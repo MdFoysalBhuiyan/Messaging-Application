@@ -34,6 +34,8 @@ namespace Messaging_Application
                 MessageBox.Show("Please enter both username and password.");
                 return;
             }
+
+
             Form2 form2 = new Form2();
             form2.Show();
             this.Hide();
