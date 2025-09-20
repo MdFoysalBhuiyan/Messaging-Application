@@ -21,19 +21,59 @@ namespace Messaging_Application
         {
             InitializeComponent();
             dataAccess = new DataAcess();
+            PopulateCombobox<UserTypeEnum>(cb);
         }
 
         //private string ImageLocation;
 
-       /* public Sign_Up()
+        /* public Sign_Up()
+         {
+             InitializeComponent();
+         }
+        */
+        private void cb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            InitializeComponent();
+            MessageBox.Show(cb.SelectedValue.ToString());
         }
-       */
+
+        public static class EnumHelper
+        {
+            public static List<KeyValuePair<string, T>> GetEnumDescriptionAndValue<T>()
+            {
+                return Enum.GetValues(typeof(T))
+                           .Cast<T>()
+                           .Select(e =>
+                               new KeyValuePair<string, T>(GetEnumDescription(e), e))
+                           .ToList();
+            }
+
+            private static string GetEnumDescription<T>(T value)
+            {
+                var fieldInfo = value.GetType().GetField(value.ToString());
+
+                var descriptionAttribute = (DescriptionAttribute[])fieldInfo
+                    .GetCustomAttributes(typeof(DescriptionAttribute), false);
+
+                return descriptionAttribute.Length > 0
+                    ? descriptionAttribute[0].Description
+                    : value.ToString();
+            }
+        }
+
+        private void PopulateCombobox<T>(ComboBox cb)
+        {
+            var usertypes = EnumHelper.GetEnumDescriptionAndValue<T>();
+
+            cb.DisplayMember = "Key";
+            cb.ValueMember = "Value";
+
+            cb.DataSource = usertypes;
+        }
 
         //string constring = "Data Source=DESKTOP-ECS1L4V\SQLEXPRESS;Initial Catalog=Text;Integrated Security=True;Trust Server Certificate=True";
         private void btn_signUp_Click(object sender, EventArgs e)  //sign up button
         {
+
             /*if (pictureBox2.Image == null)
             {
                 MessageBox.Show("Select Photo");
@@ -83,10 +123,6 @@ namespace Messaging_Application
             if (results > 0)
             {
                 MessageBox.Show("Registration Success.");
-            }
-            else
-            {
-                MessageBox.Show("Registration Failed.");
             }
 
             Form2 form2 = new Form2();

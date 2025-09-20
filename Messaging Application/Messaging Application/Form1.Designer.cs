@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btn_signin = new System.Windows.Forms.Label();
-            this.btn_SignUp = new System.Windows.Forms.Label();
+            this.btn_signin_1 = new System.Windows.Forms.Label();
+            this.btn_SignUp_1 = new System.Windows.Forms.Label();
             this.btn_Exit = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -42,35 +42,35 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // btn_signin
+            // btn_signin_1
             // 
-            this.btn_signin.AutoSize = true;
-            this.btn_signin.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_signin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btn_signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_signin.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_signin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
-            this.btn_signin.Location = new System.Drawing.Point(414, 452);
-            this.btn_signin.Name = "btn_signin";
-            this.btn_signin.Size = new System.Drawing.Size(109, 34);
-            this.btn_signin.TabIndex = 3;
-            this.btn_signin.Text = "Sign In";
-            this.btn_signin.Click += new System.EventHandler(this.btn_signin_Click);
+            this.btn_signin_1.AutoSize = true;
+            this.btn_signin_1.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_signin_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_signin_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_signin_1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_signin_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
+            this.btn_signin_1.Location = new System.Drawing.Point(414, 452);
+            this.btn_signin_1.Name = "btn_signin_1";
+            this.btn_signin_1.Size = new System.Drawing.Size(109, 34);
+            this.btn_signin_1.TabIndex = 3;
+            this.btn_signin_1.Text = "Sign In";
+            this.btn_signin_1.Click += new System.EventHandler(this.btn_signin_Click_1);
             // 
-            // btn_SignUp
+            // btn_SignUp_1
             // 
-            this.btn_SignUp.AutoSize = true;
-            this.btn_SignUp.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_SignUp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btn_SignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SignUp.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
-            this.btn_SignUp.Location = new System.Drawing.Point(698, 452);
-            this.btn_SignUp.Name = "btn_SignUp";
-            this.btn_SignUp.Size = new System.Drawing.Size(121, 34);
-            this.btn_SignUp.TabIndex = 3;
-            this.btn_SignUp.Text = "Sign Up";
-            this.btn_SignUp.Click += new System.EventHandler(this.btn_SignUp_Click);
+            this.btn_SignUp_1.AutoSize = true;
+            this.btn_SignUp_1.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_SignUp_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_SignUp_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SignUp_1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SignUp_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(42)))), ((int)(((byte)(68)))));
+            this.btn_SignUp_1.Location = new System.Drawing.Point(698, 452);
+            this.btn_SignUp_1.Name = "btn_SignUp_1";
+            this.btn_SignUp_1.Size = new System.Drawing.Size(121, 34);
+            this.btn_SignUp_1.TabIndex = 3;
+            this.btn_SignUp_1.Text = "Sign Up";
+            this.btn_SignUp_1.Click += new System.EventHandler(this.btn_SignUp_Click_1);
             // 
             // btn_Exit
             // 
@@ -101,8 +101,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.btn_Exit);
-            this.Controls.Add(this.btn_SignUp);
-            this.Controls.Add(this.btn_signin);
+            this.Controls.Add(this.btn_SignUp_1);
+            this.Controls.Add(this.btn_signin_1);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -118,8 +118,8 @@
         #endregion
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label btn_signin;
-        private System.Windows.Forms.Label btn_SignUp;
+        private System.Windows.Forms.Label btn_signin_1;
+        private System.Windows.Forms.Label btn_SignUp_1;
         private System.Windows.Forms.Label btn_Exit;
     }
 }

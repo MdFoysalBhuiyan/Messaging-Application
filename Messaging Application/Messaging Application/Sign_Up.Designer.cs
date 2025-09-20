@@ -42,7 +42,7 @@
             this.btn_Exit = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btm_picture = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -193,17 +193,18 @@
             this.btm_picture.Text = "UPLOAD";
             this.btm_picture.Click += new System.EventHandler(this.btm_picture_Click);
             // 
-            // comboBox1
+            // cb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cb.FormattingEnabled = true;
+            this.cb.Items.AddRange(new object[] {
             "Admin",
             "Support",
             "Customer"});
-            this.comboBox1.Location = new System.Drawing.Point(1119, 400);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 17;
+            this.cb.Location = new System.Drawing.Point(1119, 400);
+            this.cb.Name = "cb";
+            this.cb.Size = new System.Drawing.Size(121, 21);
+            this.cb.TabIndex = 17;
+            this.cb.SelectedIndexChanged += new System.EventHandler(this.cb_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -220,7 +221,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb);
             this.Controls.Add(this.btm_picture);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
@@ -264,7 +265,7 @@
         private System.Windows.Forms.Label btn_Exit;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label btm_picture;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb;
         private System.Windows.Forms.Label label1;
     }
 }
