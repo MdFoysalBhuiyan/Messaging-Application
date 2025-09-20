@@ -21,4 +21,30 @@ C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging App
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.exe
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.pdb
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.exe.config
+<<<<<<< HEAD
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Texting_page.resources
+=======
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\bin\Debug\Messaging Application.exe.config
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\bin\Debug\Messaging Application.exe
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\bin\Debug\Messaging Application.pdb
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\bin\Debug\Business.Layer.dll
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\bin\Debug\Data.Layer.dll
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\bin\Debug\Business.Layer.pdb
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\bin\Debug\Data.Layer.pdb
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\UI.Layer.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.exe.config
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Chat.resources
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Form1.resources
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Form2.resources
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Properties.Resources.resources
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Setting.resources
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Sign_in_form.resources
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Sign_Up.resources
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.UserControl1.resources
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.UserControl2.resources
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\UI.Layer.csproj.GenerateResource.cache
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\UI.Layer.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\UI.Layer.csproj.Up2Date
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.exe
+C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging Application.pdb
+>>>>>>> d3d3faf7f01035e7ee06ba652912267223ce5be8
