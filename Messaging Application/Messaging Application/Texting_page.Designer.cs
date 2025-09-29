@@ -32,6 +32,10 @@
             this.bt_setting = new System.Windows.Forms.Button();
             this.bt_home = new System.Windows.Forms.Button();
             this.btn_logout = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.userControl11 = new Messaging_Application.UserControl1();
+            this.userControl12 = new Messaging_Application.UserControl1();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bt_chat
@@ -83,17 +87,48 @@
             this.btn_logout.TabIndex = 25;
             this.btn_logout.Text = "Log out";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.userControl12);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(864, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(384, 641);
+            this.flowLayoutPanel1.TabIndex = 26;
+            // 
+            // userControl11
+            // 
+            this.userControl11.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.userControl11.Image1 = null;
+            this.userControl11.Location = new System.Drawing.Point(3, 3);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(8, 8);
+            this.userControl11.TabIndex = 0;
+            this.userControl11.Text1 = null;
+            // 
+            // userControl12
+            // 
+            this.userControl12.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.userControl12.Image1 = null;
+            this.userControl12.Location = new System.Drawing.Point(3, 3);
+            this.userControl12.Name = "userControl12";
+            this.userControl12.Size = new System.Drawing.Size(381, 116);
+            this.userControl12.TabIndex = 0;
+            this.userControl12.Text1 = null;
+            // 
             // Texting_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1248, 641);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.bt_home);
             this.Controls.Add(this.bt_setting);
             this.Controls.Add(this.bt_chat);
             this.Name = "Texting_page";
             this.Text = "Texting_page";
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,5 +140,8 @@
         private System.Windows.Forms.Button bt_setting;
         private System.Windows.Forms.Button bt_home;
         private System.Windows.Forms.Label btn_logout;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private UserControl1 userControl11;
+        private UserControl1 userControl12;
     }
 }

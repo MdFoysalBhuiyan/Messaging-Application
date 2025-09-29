@@ -27,7 +27,6 @@ namespace Messaging_Application
                 label1.Text = value; // Update the label 
             }
         }
-
         private Image _image;
         public Image Image1
         {
@@ -35,10 +34,9 @@ namespace Messaging_Application
             set 
             { 
                 _image = value;
-                pictureBox_form_chat.Image = value; // Update the picture
+                //pictureBox1_form_chat.Image = value; // Update the picture
             }
         }
-
         private void UserControl1_Load(object sender, EventArgs e)
         {
 
