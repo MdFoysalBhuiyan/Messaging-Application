@@ -41,5 +41,10 @@ namespace Messaging_Application
         {
 
         }
+
+        private void UserControl1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
