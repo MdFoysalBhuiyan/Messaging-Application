@@ -49,7 +49,7 @@ namespace Messaging_Application
             this.Hide();
         }
 
-        private void UserItem(Usercontrol1[] userControl, Usercontrol1[] userControls)
+        /*private void UserItem(Usercontrol1[] userControl, Usercontrol1[] userControls)
         {
             flowLayoutPanel1.Controls.Clear();
             SqlDataAdapter adapter;
@@ -82,10 +82,10 @@ namespace Messaging_Application
                         }
                     }
                 }
-            }
+            } */
 
         }
 
 
     }
-}
+
