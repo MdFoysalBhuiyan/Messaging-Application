@@ -19,6 +19,9 @@ namespace Messaging_Application
             //CurrentUser = user;
         }
 
+        //Here need to add datareader to show user details
+
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -54,6 +57,11 @@ namespace Messaging_Application
            Form2 form2 = new Form2();
            form2.Show();
            this.Hide();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

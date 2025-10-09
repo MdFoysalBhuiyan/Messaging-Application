@@ -36,19 +36,21 @@
             this.userControl12 = new Messaging_Application.UserControl1();
             this.userControl11 = new Messaging_Application.UserControl1();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_send = new System.Windows.Forms.Button();
             this.txt_box_for_type = new System.Windows.Forms.TextBox();
+            this.btn_send = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.userControl21 = new Messaging_Application.UserControl2();
+            this.userControl31 = new Messaging_Application.UserControl3();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // bt_chat
@@ -118,6 +120,7 @@
             this.userControl12.Size = new System.Drawing.Size(381, 116);
             this.userControl12.TabIndex = 0;
             this.userControl12.Text1 = null;
+            this.userControl12.Load += new System.EventHandler(this.userControl12_Load);
             // 
             // userControl11
             // 
@@ -131,30 +134,11 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(156, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(705, 650);
             this.panel1.TabIndex = 27;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(705, 106);
-            this.panel2.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(705, 650);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
@@ -186,15 +170,6 @@
             this.panel4.Size = new System.Drawing.Size(705, 70);
             this.panel4.TabIndex = 2;
             // 
-            // btn_send
-            // 
-            this.btn_send.Location = new System.Drawing.Point(610, 22);
-            this.btn_send.Name = "btn_send";
-            this.btn_send.Size = new System.Drawing.Size(85, 33);
-            this.btn_send.TabIndex = 0;
-            this.btn_send.Text = "SEND";
-            this.btn_send.UseVisualStyleBackColor = true;
-            // 
             // txt_box_for_type
             // 
             this.txt_box_for_type.BackColor = System.Drawing.SystemColors.InactiveBorder;
@@ -204,11 +179,60 @@
             this.txt_box_for_type.Size = new System.Drawing.Size(585, 61);
             this.txt_box_for_type.TabIndex = 1;
             // 
+            // btn_send
+            // 
+            this.btn_send.Location = new System.Drawing.Point(610, 22);
+            this.btn_send.Name = "btn_send";
+            this.btn_send.Size = new System.Drawing.Size(85, 33);
+            this.btn_send.TabIndex = 0;
+            this.btn_send.Text = "SEND";
+            this.btn_send.UseVisualStyleBackColor = true;
+            this.btn_send.Click += new System.EventHandler(this.btn_send_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(705, 106);
+            this.panel2.TabIndex = 0;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.userControl21);
+            this.flowLayoutPanel2.Controls.Add(this.userControl31);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(156, 119);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(705, 458);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // userControl21
+            // 
+            this.userControl21.AutoSize = true;
+            this.userControl21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.userControl21.Location = new System.Drawing.Point(3, 3);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(404, 58);
+            this.userControl21.TabIndex = 0;
+            this.userControl21.Title = null;
+            // 
+            // userControl31
+            // 
+            this.userControl31.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.userControl31.Dock = System.Windows.Forms.DockStyle.Top;
+            this.userControl31.Icon = null;
+            this.userControl31.Location = new System.Drawing.Point(3, 67);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(390, 51);
+            this.userControl31.TabIndex = 1;
+            this.userControl31.Title = null;
+            // 
             // Texting_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1248, 641);
+            this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -221,13 +245,13 @@
             this.Text = "Texting_page";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,12 +267,14 @@
         private UserControl1 userControl11;
         private UserControl1 userControl12;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btn_send;
         private System.Windows.Forms.TextBox txt_box_for_type;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private UserControl2 userControl21;
+        private UserControl3 userControl31;
     }
 }
