@@ -56,5 +56,28 @@ namespace Messaging_Application
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e) //button for customer care
+        {
+            Texting_page texting_Page = new Texting_page();
+            texting_Page.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Texting_page texting_Page = new Texting_page();
+            texting_Page.Show();
+            this.Hide();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Texting_page texting_Page = new Texting_page();
+            texting_Page.Show();
+            this.Hide();
+
+        }
     }
 }

@@ -95,6 +95,7 @@
             this.button1.TabIndex = 19;
             this.button1.Text = "Support";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -106,6 +107,7 @@
             this.button2.TabIndex = 20;
             this.button2.Text = "Technician";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -117,6 +119,7 @@
             this.button3.TabIndex = 21;
             this.button3.Text = "Customer Care";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // bt_Token
             // 

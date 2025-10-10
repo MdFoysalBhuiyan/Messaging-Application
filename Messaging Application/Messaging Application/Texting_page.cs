@@ -53,7 +53,7 @@ namespace Messaging_Application
         {
             SqlConnection con = new SqlConnection(constring);
             con.Open();
-            string q = "insert into chat(userone,usertow,massage)values(userone=@userone,usertwo=@usertwo,massage=@massage";
+            string q = "insert into chat(userone,usertow,massage)values(@userone,@usertwo,@massage";
             SqlCommand cmd = new SqlCommand(q, con);
             cmd.Parameters.AddWithValue("@userone", ); //need to add something here like users details
             cmd.Parameters.AddWithValue("@usertwo",  );
@@ -66,7 +66,7 @@ namespace Messaging_Application
         private void MessageChat()
         {
             SqlDataAdapter adapter;
-            adapter = new SqlDataAdapter("Select * from chat where userone=@userone and usertwo=@usertwo or userone=@usertwo and usertwo=@userone", constring);
+            adapter = new SqlDataAdapter("select * from Chat", constring);
             DataTable table = new DataTable();
             adapter.Fill(table);
 
