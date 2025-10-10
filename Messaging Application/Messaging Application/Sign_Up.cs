@@ -24,6 +24,8 @@ namespace Messaging_Application
             PopulateCombobox<UserTypeEnum>(cb);
         }
 
+        //string constring1 = DataAcess.Connection_String;
+
         //private string ImageLocation;
 
         /* public Sign_Up()
@@ -99,7 +101,7 @@ namespace Messaging_Application
             User user1 = new User
             {
                 Username = tbFullname.Text,
-                //Password = tb_password.Text,
+                Password = tb_password.Text,
                 Email = tb_email.Text,
                 Image = pictureBox2.ImageLocation
             };
@@ -116,8 +118,10 @@ namespace Messaging_Application
             cmd.Parameters.AddWithValue("@Email", tb_email.Text);
             cmd.Parameters.AddWithValue("@Password", tb_password.Text);
             cmd.Parameters.AddWithValue("@Confirm_Passord", tb_con_pass.Text);
-            //cmd.Parameters.AddWithValue("@Image", ms.ToArray());
-
+            cmd.Parameters.AddWithValue("@Image", ms.ToArray());
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
 
             int results = dataAccess.ExecuteNonQuery(q);
             if (results > 0)
@@ -125,13 +129,17 @@ namespace Messaging_Application
                 MessageBox.Show("Registration Success.");
             }
 
+            tbFullname.Clear();
+            tb_email.Clear();
+            tb_password.Clear();
+            tb_con_pass.Clear();
+            pictureBox2.Image = null;
+
+            tbFullname.Clear();
             Form2 form2 = new Form2();
             form2.Show();
             this.Hide();
 
-            //con.Open();
-            //cmd.ExecuteNonQuery();
-            //con.Close();
             //MessageBox.Show("Sign up Successfully");
 
         }

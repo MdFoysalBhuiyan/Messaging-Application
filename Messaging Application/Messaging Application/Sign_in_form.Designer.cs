@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Exit = new System.Windows.Forms.Label();
             this.btn_login = new System.Windows.Forms.Label();
             this.mail = new System.Windows.Forms.Label();
             this.pass = new System.Windows.Forms.Label();
             this.tb_email_login = new System.Windows.Forms.TextBox();
             this.tb_email_pass = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,6 +49,16 @@
             this.panel1.Size = new System.Drawing.Size(514, 720);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Messaging_Application.Properties.Resources.chat;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 96);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(512, 512);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // btn_Exit
             // 
@@ -103,6 +113,7 @@
             this.tb_email_login.Name = "tb_email_login";
             this.tb_email_login.Size = new System.Drawing.Size(488, 20);
             this.tb_email_login.TabIndex = 1;
+            this.tb_email_login.TextChanged += new System.EventHandler(this.tb_email_login_TextChanged);
             // 
             // tb_email_pass
             // 
@@ -111,16 +122,7 @@
             this.tb_email_pass.PasswordChar = '*';
             this.tb_email_pass.Size = new System.Drawing.Size(488, 20);
             this.tb_email_pass.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Messaging_Application.Properties.Resources.chat;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 96);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(512, 512);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.tb_email_pass.TextChanged += new System.EventHandler(this.tb_email_pass_TextChanged);
             // 
             // Sign_in_form
             // 
