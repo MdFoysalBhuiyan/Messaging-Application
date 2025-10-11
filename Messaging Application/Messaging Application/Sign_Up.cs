@@ -173,7 +173,13 @@ namespace Messaging_Application
         }
         private void Sign_Up_Load(object sender, EventArgs e)
         {
+        }
 
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
         }
     }
 }

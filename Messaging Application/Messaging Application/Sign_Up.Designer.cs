@@ -44,6 +44,7 @@
             this.btm_picture = new System.Windows.Forms.Label();
             this.cb = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_logout = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -216,11 +217,26 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Select User";
             // 
+            // btn_logout
+            // 
+            this.btn_logout.AutoSize = true;
+            this.btn_logout.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_logout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.Location = new System.Drawing.Point(1160, 686);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(114, 34);
+            this.btn_logout.TabIndex = 18;
+            this.btn_logout.Text = "Log out";
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            // 
             // Sign_Up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.cb);
             this.Controls.Add(this.btm_picture);
             this.Controls.Add(this.pictureBox2);
@@ -267,5 +283,6 @@
         private System.Windows.Forms.Label btm_picture;
         private System.Windows.Forms.ComboBox cb;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label btn_logout;
     }
 }

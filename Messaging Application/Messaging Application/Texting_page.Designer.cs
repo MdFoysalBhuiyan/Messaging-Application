@@ -64,7 +64,6 @@
             this.bt_chat.TabIndex = 24;
             this.bt_chat.Text = "Chat";
             this.bt_chat.UseVisualStyleBackColor = false;
-            this.bt_chat.Click += new System.EventHandler(this.bt_chat_Click);
             // 
             // bt_setting
             // 

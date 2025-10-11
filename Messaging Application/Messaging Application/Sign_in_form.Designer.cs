@@ -36,6 +36,7 @@
             this.pass = new System.Windows.Forms.Label();
             this.tb_email_login = new System.Windows.Forms.TextBox();
             this.tb_email_pass = new System.Windows.Forms.TextBox();
+            this.btn_logout = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -124,11 +125,26 @@
             this.tb_email_pass.TabIndex = 2;
             this.tb_email_pass.TextChanged += new System.EventHandler(this.tb_email_pass_TextChanged);
             // 
+            // btn_logout
+            // 
+            this.btn_logout.AutoSize = true;
+            this.btn_logout.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_logout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.Location = new System.Drawing.Point(1154, 677);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(114, 34);
+            this.btn_logout.TabIndex = 8;
+            this.btn_logout.Text = "Log out";
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            // 
             // Sign_in_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.tb_email_pass);
             this.Controls.Add(this.tb_email_login);
             this.Controls.Add(this.pass);
@@ -157,5 +173,6 @@
         private System.Windows.Forms.Label pass;
         private System.Windows.Forms.TextBox tb_email_login;
         private System.Windows.Forms.TextBox tb_email_pass;
+        private System.Windows.Forms.Label btn_logout;
     }
 }

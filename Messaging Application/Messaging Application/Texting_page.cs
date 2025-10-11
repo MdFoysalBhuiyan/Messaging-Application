@@ -19,7 +19,13 @@ namespace Messaging_Application
         private object label1;
 
         public string LoggedInEmail { get; set; }
-
+        public Image UserImage { get; set; } 
+        public Texting_page(string email, Image userImage)
+        {
+            InitializeComponent();
+            LoggedInEmail = email; 
+            UserImage = userImage;  
+        }
 
         public Texting_page()
         {
@@ -59,7 +65,7 @@ namespace Messaging_Application
             con.Open();
             string q = "insert into chat(userone,usertow,massage)values(@userone,@usertwo,@massage";
             SqlCommand cmd = new SqlCommand(q, con);
-            cmd.Parameters.AddWithValue("@userone", ); //need to add something here like users details
+            cmd.Parameters.AddWithValue("@userone", UserImage);
             cmd.Parameters.AddWithValue("@usertwo",label2.Text);
             cmd.Parameters.AddWithValue("@massage", pictureBox2.Text);
             con.Close();
@@ -114,14 +120,6 @@ namespace Messaging_Application
 
         } 
         */
-
-        private void bt_chat_Click(object sender, EventArgs e)
-        {
-            Texting_page textingPage = new Texting_page();
-            textingPage.LoggedInEmail = label1.Text; 
-            textingPage.Show();
-            this.Hide();  
-        }
 
 
         private void MessageChat()
@@ -179,16 +177,10 @@ namespace Messaging_Application
             }
 
             UserControl1 Control = (UserControl1)sender;
-
-            .Text = Control.Text1;
+            label2.Text = Control.Text1;
             pictureBox2.Image = Control.Image1;
             MessageChat();
-
         }
-
-
-
-
 
 
         /*private void UserItem(Usercontrol1[] userControl, Usercontrol1[] userControls)
@@ -227,7 +219,4 @@ namespace Messaging_Application
             } */
 
     }
-
-
     }
-

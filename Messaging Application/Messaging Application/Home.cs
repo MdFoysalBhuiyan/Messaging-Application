@@ -51,7 +51,7 @@ namespace Messaging_Application
             this.Hide();
         }
 
-        private void bt_chat_Click(object sender, EventArgs e)
+        private void Bt_chat_Click(object sender, EventArgs e)
         {
             Chat chatform = new Chat();
             chatform.Show();
@@ -91,7 +91,11 @@ namespace Messaging_Application
             con.Close();
 
         }
-
-
+        private void bt_chat_Click(object sender, EventArgs e)
+        {
+            Texting_page textingPage = new Texting_page(label1.Text, pictureBox1.Image);  
+            textingPage.Show();
+            this.Hide(); 
+        }
     }
 }
