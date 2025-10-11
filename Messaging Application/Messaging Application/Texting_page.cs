@@ -127,7 +127,6 @@ namespace Messaging_Application
             SqlDataAdapter adapter;
             adapter = new SqlDataAdapter("SELECT * FROM Chat", constring);
             DataTable table = new DataTable();
-            adapter.Fill(table);
 
             if (table.Rows.Count > 0)
             {

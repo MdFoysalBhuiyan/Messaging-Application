@@ -66,30 +66,50 @@ namespace Messaging_Application
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            label1.Text = LoggedInUser;
-            byte[] getimage = new byte[0];
-            SqlConnection con = new SqlConnection(connectionString);
-            con.Open();
-            string q = "select * from Log_in where Email = '" + label1.Text + "'";
-            SqlCommand cmd = new SqlCommand(q, con);
-            SqlDataReader dr = cmd.ExecuteReader();
-            dr.Read();
-            if (dr.HasRows)
+            if (LoggedInUser != null)
             {
-                label1.Text = dr[0].ToString();
-                byte[] images = (byte[])(dr["image"]);
-                if (images == null)
+                label1.Text = LoggedInUser.ToString();  // Display the logged-in user info (e.g., email)
+
+                // Query the database for the user's information
+                string connstring = DataAcess.ConnectionString;
+                string query = "SELECT Full_Name, Image FROM Log_in WHERE Email = @Email";
+
+                using (SqlConnection con = new SqlConnection(connstring))
                 {
-                    pictureBox1.Image = null;
-                }
-                else
-                {
-                    MemoryStream ms = new MemoryStream(images);
-                    pictureBox1.Image = Image.FromStream(ms);
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@Email", LoggedInUser.ToString());  // Use the logged-in email
+
+                    try
+                    {
+                        con.Open();
+                        SqlDataReader dr = cmd.ExecuteReader();
+                        if (dr.Read())
+                        {
+                            label1.Text = dr["Full_Name"].ToString();  // Display the full name
+
+                            // Retrieve and display the image
+                            byte[] imageBytes = dr["Image"] as byte[];
+                            if (imageBytes != null)
+                            {
+                                MemoryStream ms = new MemoryStream(imageBytes);
+                                pictureBox1.Image = Image.FromStream(ms);
+                            }
+                            else
+                            {
+                                pictureBox1.Image = null;  // If no image, set to null
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);  // Handle any errors
+                    }
                 }
             }
-            con.Close();
-
+            else
+            {
+                MessageBox.Show("No user is logged in.");  // Display message if no user is logged in
+            }
         }
         private void bt_chat_Click(object sender, EventArgs e)
         {

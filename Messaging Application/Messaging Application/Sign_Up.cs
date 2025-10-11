@@ -17,6 +17,10 @@ namespace Messaging_Application
         private string constring;
 
         DataAcess dataAccess;
+
+        string connstring = DataAcess.Connection_String;
+
+        string ConnectionString = "Data Source=DESKTOP-ECS1L4V\\SQLEXPRESS;Initial Catalog=Text;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
         public Sign_Up()
         {
             InitializeComponent();
@@ -107,21 +111,33 @@ namespace Messaging_Application
             };
 
             //database code temporary
-            SqlConnection con = new SqlConnection(constring);
+            /* SqlConnection con = new SqlConnection(ConnectionString);
             string q = "Insert into Sign_Up(Full_Name,Email,Password,Confirm_Password,Image)values(@Full_Name,@Email,@Password,@Confirm_Passord,@Image)";
-            SqlCommand cmd = new SqlCommand(q, con); //con is local variable here
+            SqlCommand cmd = new SqlCommand(q, con);
             MemoryStream ms = new MemoryStream();
-
             pictureBox2.Image.Save(ms, pictureBox2.Image.RawFormat);
-
-            cmd.Parameters.AddWithValue("@Full_Name", tbFullname.Text); //user1.Username is same as tbFullname.Text
+            cmd.Parameters.AddWithValue("@Full_Name", tbFullname.Text);
             cmd.Parameters.AddWithValue("@Email", tb_email.Text);
             cmd.Parameters.AddWithValue("@Password", tb_password.Text);
             cmd.Parameters.AddWithValue("@Confirm_Passord", tb_con_pass.Text);
-            cmd.Parameters.AddWithValue("@Image", ms.ToArray());
+            //cmd.Parameters.AddWithValue("@Image", ms.ToArray());
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
+            */
+
+            string connstring = DataAcess.ConnectionString; 
+
+            string q = "INSERT INTO Sign_Up (Full_Name, Email, Password, Confirm_Password, Image) " +
+                       "VALUES (@Full_Name, @Email, @Password, @Confirm_Password, @Image)";
+            SqlCommand cmd = new SqlCommand(q);
+            cmd.Parameters.AddWithValue("@Full_Name", tbFullname.Text);
+            cmd.Parameters.AddWithValue("@Email", tb_email.Text);
+            cmd.Parameters.AddWithValue("@Password", tb_password.Text);
+            cmd.Parameters.AddWithValue("@Confirm_Password", tb_con_pass.Text);
+            MemoryStream ms = new MemoryStream();
+            pictureBox2.Image.Save(ms, pictureBox2.Image.RawFormat);
+            cmd.Parameters.AddWithValue("@Image", ms.ToArray());
 
             int results = dataAccess.ExecuteNonQuery(q);
             if (results > 0)
