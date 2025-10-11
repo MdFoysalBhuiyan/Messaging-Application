@@ -15,9 +15,9 @@ namespace Messaging_Application
 {
     public partial class Sign_in_form : Form
     {
-        private string connectionString;
+        //private string connectionString;
         internal string LoggedInEmail;
-
+        public string ConnectionString = "Data Source=DESKTOP-ECS1L4V\\SQLEXPRESS;Initial Catalog=Text;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
         public Sign_in_form()
         {
             InitializeComponent();
@@ -37,35 +37,23 @@ namespace Messaging_Application
             { MessageBox.Show("Please enter both username and password.");
                 return;
             }
-            SqlConnection con = new SqlConnection(DataAcess.Connection_String);
+            SqlConnection con = new SqlConnection(ConnectionString);
+            string query = "SELECT * FROM Log_in WHERE email = @Email AND password = @Password";
 
-            string query = "SELECT COUNT(1) FROM Log_in WHERE Email = @Email AND Password = @Password";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@Email", tb_email_login.Text);
+            cmd.Parameters.AddWithValue("@Password", tb_email_pass.Text);
 
-            try
+            con.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            if (reader.HasRows)
             {
-                con.Open();
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@Email", tb_email_login.Text);
-                cmd.Parameters.AddWithValue("@Password", tb_email_pass.Text);
-                int userExists = Convert.ToInt32(cmd.ExecuteScalar());
-                if (userExists == 1)
-                {
-                    Form2 form2 = new Form2();
-                    form2.Show();
-                    this.Hide(); 
-                }
-                else
-                {
-                    MessageBox.Show("Invalid email or password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                MessageBox.Show("Login successful!");
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Error: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                con.Close();
+                MessageBox.Show("Invalid email or password.");
             }
         }
 

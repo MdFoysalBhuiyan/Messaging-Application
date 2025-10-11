@@ -20,7 +20,7 @@ namespace Messaging_Application
 
         string connstring = DataAcess.Connection_String;
 
-        string ConnectionString = "Data Source=DESKTOP-ECS1L4V\\SQLEXPRESS;Initial Catalog=Text;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+        public string ConnectionString = "Data Source=DESKTOP-ECS1L4V\\SQLEXPRESS;Initial Catalog=Text;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
         public Sign_Up()
         {
             InitializeComponent();
@@ -126,10 +126,9 @@ namespace Messaging_Application
             con.Close();
             */
 
-            string connstring = DataAcess.ConnectionString; 
+            string connstring = DataAcess.ConnectionString;
 
-            string q = "INSERT INTO Sign_Up (Full_Name, Email, Password, Confirm_Password, Image) " +
-                       "VALUES (@Full_Name, @Email, @Password, @Confirm_Password, @Image)";
+            string q = "Insert Log_in(Full_Name,Email,Password,Confirm_Password,Image)values(@Full_Name,@Email,@Password,@Confirm_Passord,@Image)";
             SqlCommand cmd = new SqlCommand(q);
             cmd.Parameters.AddWithValue("@Full_Name", tbFullname.Text);
             cmd.Parameters.AddWithValue("@Email", tb_email.Text);
@@ -144,17 +143,11 @@ namespace Messaging_Application
             {
                 MessageBox.Show("Registration Success.");
             }
-
             tbFullname.Clear();
             tb_email.Clear();
             tb_password.Clear();
             tb_con_pass.Clear();
             pictureBox2.Image = null;
-
-            tbFullname.Clear();
-            Form2 form2 = new Form2();
-            form2.Show();
-            this.Hide();
 
             //MessageBox.Show("Sign up Successfully");
 

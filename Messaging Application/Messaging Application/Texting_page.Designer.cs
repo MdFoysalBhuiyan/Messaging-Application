@@ -38,6 +38,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txt_box_for_type = new System.Windows.Forms.TextBox();
@@ -45,7 +46,6 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.userControl21 = new Messaging_Application.UserControl2();
             this.userControl31 = new Messaging_Application.UserControl3();
-            this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -158,6 +158,16 @@
             this.panel3.Size = new System.Drawing.Size(705, 116);
             this.panel3.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(162, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(19, 31);
@@ -224,19 +234,9 @@
             this.userControl31.Icon = null;
             this.userControl31.Location = new System.Drawing.Point(3, 67);
             this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(390, 20);
+            this.userControl31.Size = new System.Drawing.Size(390, 48);
             this.userControl31.TabIndex = 1;
             this.userControl31.Title = null;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(162, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
             // 
             // Texting_page
             // 
