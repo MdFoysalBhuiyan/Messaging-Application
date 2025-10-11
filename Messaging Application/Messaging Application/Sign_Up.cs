@@ -126,8 +126,9 @@ namespace Messaging_Application
             con.Close();
             */
 
-            string connstring = DataAcess.ConnectionString;
+            //string connstring = DataAcess.ConnectionString;
 
+            SqlConnection con = new SqlConnection(connstring);
             string q = "Insert Log_in(Full_Name,Email,Password,Confirm_Password,Image)values(@Full_Name,@Email,@Password,@Confirm_Passord,@Image)";
             SqlCommand cmd = new SqlCommand(q);
             cmd.Parameters.AddWithValue("@Full_Name", tbFullname.Text);
@@ -138,11 +139,35 @@ namespace Messaging_Application
             pictureBox2.Image.Save(ms, pictureBox2.Image.RawFormat);
             cmd.Parameters.AddWithValue("@Image", ms.ToArray());
 
-            int results = dataAccess.ExecuteNonQuery(q);
+            try
+            {
+                con.Open();
+                int results = cmd.ExecuteNonQuery();
+
+                if (results > 0)
+                {
+                    MessageBox.Show("Registration Success.");
+                }
+                else
+                {
+                    MessageBox.Show("Registration failed.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+
+
+            /*int results = dataAccess.ExecuteNonQuery(q);
             if (results > 0)
             {
                 MessageBox.Show("Registration Success.");
-            }
+            }*/
             tbFullname.Clear();
             tb_email.Clear();
             tb_password.Clear();
@@ -178,7 +203,6 @@ namespace Messaging_Application
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
         private void Sign_Up_Load(object sender, EventArgs e)
         {

@@ -17,7 +17,7 @@ namespace Messaging_Application
     {
         private string constring;
         private object label1;
-
+        public string ConnectionString = "Data Source=DESKTOP-ECS1L4V\\SQLEXPRESS;Initial Catalog=Text;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
         public string LoggedInEmail { get; set; }
         public Image UserImage { get; set; } 
         public Texting_page(string email, Image userImage)
@@ -61,16 +61,18 @@ namespace Messaging_Application
 
         private void btn_send_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(constring);
-            con.Open();
-            string q = "insert into chat(userone,usertow,massage)values(@userone,@usertwo,@massage";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            string q = "insert into chat(userone,usertow,massage)values(@userone,@usertwo,@massage)";
             SqlCommand cmd = new SqlCommand(q, con);
             cmd.Parameters.AddWithValue("@userone", UserImage);
-            cmd.Parameters.AddWithValue("@usertwo",label2.Text);
+            cmd.Parameters.AddWithValue("@usertwo", label2.Text);
             cmd.Parameters.AddWithValue("@massage", pictureBox2.Text);
+            con.Open();
+            cmd.ExecuteNonQuery();
             con.Close();
             MessageChat();
-           // textBox1.Clear();
+            //UserImage.Clear();
+            // textBox1.Clear();
         }
 
         /*
@@ -125,7 +127,7 @@ namespace Messaging_Application
         private void MessageChat()
         {
             SqlDataAdapter adapter;
-            adapter = new SqlDataAdapter("SELECT * FROM Chat", constring);
+            adapter = new SqlDataAdapter("select * from Chat", constring);
             DataTable table = new DataTable();
 
             if (table.Rows.Count > 0)

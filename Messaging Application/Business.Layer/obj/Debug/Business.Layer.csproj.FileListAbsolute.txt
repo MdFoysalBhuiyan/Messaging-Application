@@ -7,12 +7,3 @@ C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Busines
 C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Business.Layer\obj\Debug\Business.387F0729.Up2Date
 C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Business.Layer\obj\Debug\Business.Layer.dll
 C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Business.Layer\obj\Debug\Business.Layer.pdb
-C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Business.Layer\bin\Debug\Business.Layer.dll
-C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Business.Layer\bin\Debug\Business.Layer.pdb
-C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Business.Layer\bin\Debug\Data.Layer.dll
-C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Business.Layer\bin\Debug\Data.Layer.pdb
-C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Business.Layer\obj\Debug\Business.Layer.csproj.AssemblyReference.cache
-C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Business.Layer\obj\Debug\Business.Layer.csproj.CoreCompileInputs.cache
-C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Business.Layer\obj\Debug\Business.387F0729.Up2Date
-C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Business.Layer\obj\Debug\Business.Layer.dll
-C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Business.Layer\obj\Debug\Business.Layer.pdb

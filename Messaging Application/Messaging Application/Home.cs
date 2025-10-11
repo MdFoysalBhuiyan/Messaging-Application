@@ -20,7 +20,7 @@ namespace Messaging_Application
             InitializeComponent();
             //CurrentUser = user;
         }
-
+        public string ConnectionString = "Data Source=DESKTOP-ECS1L4V\\SQLEXPRESS;Initial Catalog=Text;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
         //Here need to add datareader to show user details
 
         string connectionString = DataAcess.Connection_String;
@@ -68,16 +68,17 @@ namespace Messaging_Application
         {
             if (LoggedInUser != null)
             {
-                label1.Text = LoggedInUser.ToString();  // Display the logged-in user info (e.g., email)
+                label1.Text = LoggedInUser.ToString(); 
 
-                // Query the database for the user's information
-                string connstring = DataAcess.ConnectionString;
+                //string connstring = DataAcess.ConnectionString;
+
+                string connstring = ConnectionString;
                 string query = "SELECT Full_Name, Image FROM Log_in WHERE Email = @Email";
 
                 using (SqlConnection con = new SqlConnection(connstring))
                 {
                     SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@Email", LoggedInUser.ToString());  // Use the logged-in email
+                    cmd.Parameters.AddWithValue("@Email", LoggedInUser.ToString()); 
 
                     try
                     {
@@ -85,9 +86,8 @@ namespace Messaging_Application
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
                         {
-                            label1.Text = dr["Full_Name"].ToString();  // Display the full name
+                            label1.Text = dr["Full_Name"].ToString();  
 
-                            // Retrieve and display the image
                             byte[] imageBytes = dr["Image"] as byte[];
                             if (imageBytes != null)
                             {
@@ -96,19 +96,19 @@ namespace Messaging_Application
                             }
                             else
                             {
-                                pictureBox1.Image = null;  // If no image, set to null
+                                pictureBox1.Image = null;  
                             }
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Error: " + ex.Message);  // Handle any errors
+                        MessageBox.Show("Error: " + ex.Message);  
                     }
                 }
             }
             else
             {
-                MessageBox.Show("No user is logged in.");  // Display message if no user is logged in
+                MessageBox.Show("No user is logged in."); 
             }
         }
 

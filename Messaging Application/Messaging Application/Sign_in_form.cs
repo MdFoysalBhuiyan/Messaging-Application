@@ -55,6 +55,10 @@ namespace Messaging_Application
             {
                 MessageBox.Show("Invalid email or password.");
             }
+
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
         }
 
         private void tb_email_login_TextChanged(object sender, EventArgs e)
