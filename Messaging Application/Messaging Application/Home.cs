@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +23,9 @@ namespace Messaging_Application
 
         //Here need to add datareader to show user details
 
+        string connectionString = DataAcess.Connection_String;
+
+        public string LoggedInUser { get; set; }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -61,7 +66,32 @@ namespace Messaging_Application
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            label1.Text = LoggedInUser;
+            byte[] getimage = new byte[0];
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+            string q = "select * from Log_in where Email = '" + label1.Text + "'";
+            SqlCommand cmd = new SqlCommand(q, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            if (dr.HasRows)
+            {
+                label1.Text = dr[0].ToString();
+                byte[] images = (byte[])(dr["image"]);
+                if (images == null)
+                {
+                    pictureBox1.Image = null;
+                }
+                else
+                {
+                    MemoryStream ms = new MemoryStream(images);
+                    pictureBox1.Image = Image.FromStream(ms);
+                }
+            }
+            con.Close();
 
         }
+
+
     }
 }

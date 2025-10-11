@@ -16,6 +16,7 @@ namespace Messaging_Application
     public partial class Sign_in_form : Form
     {
         private string connectionString;
+        internal string LoggedInEmail;
 
         public Sign_in_form()
         {

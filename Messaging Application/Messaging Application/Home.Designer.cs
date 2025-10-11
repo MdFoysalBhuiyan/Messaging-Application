@@ -34,6 +34,7 @@
             this.bt_setting = new System.Windows.Forms.Button();
             this.bt_home = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,11 +110,22 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.Info;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(535, 312);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(175, 43);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "label1";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_home);
             this.Controls.Add(this.bt_setting);
             this.Controls.Add(this.bt_chat);
@@ -138,5 +150,6 @@
         private System.Windows.Forms.Button bt_chat;
         private System.Windows.Forms.Button bt_setting;
         private System.Windows.Forms.Button bt_home;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -16,6 +16,10 @@ namespace Messaging_Application
     public partial class Texting_page : Form
     {
         private string constring;
+        private object label1;
+
+        public string LoggedInEmail { get; set; }
+
 
         public Texting_page()
         {
@@ -35,7 +39,7 @@ namespace Messaging_Application
             this.Hide();
         }
 
-        private void bt_chat_Click(object sender, EventArgs e)
+        private void Bt_chat_Click(object sender, EventArgs e)
         {
             Chat chatform = new Chat();
             chatform.Show();
@@ -56,13 +60,14 @@ namespace Messaging_Application
             string q = "insert into chat(userone,usertow,massage)values(@userone,@usertwo,@massage";
             SqlCommand cmd = new SqlCommand(q, con);
             cmd.Parameters.AddWithValue("@userone", ); //need to add something here like users details
-            cmd.Parameters.AddWithValue("@usertwo",  );
-            cmd.Parameters.AddWithValue("@massage", );
+            cmd.Parameters.AddWithValue("@usertwo",label2.Text);
+            cmd.Parameters.AddWithValue("@massage", pictureBox2.Text);
             con.Close();
             MessageChat();
            // textBox1.Clear();
         }
 
+        /*
         private void MessageChat()
         {
             SqlDataAdapter adapter;
@@ -79,7 +84,7 @@ namespace Messaging_Application
                 {
                     foreach (DataRow row in table.Rows)
                     {
-                        if ( .Text == row["userone"].ToString() && .Text == row["usetwo"].ToString())
+                        if (label1.Text == row["userone"].ToString() && .Text == row["usetwo"].ToString())
                         {
                             UserControl2[i] = new UserControl2();
                             UserControl2[i].Dock = DockStyle.Top;
@@ -90,7 +95,7 @@ namespace Messaging_Application
                             flowLayoutPanel2.ScrollControlIntoView(UserControl2[i]);
                         }
 
-                        else if ( .Text == row["userone"].ToString() && .Text == row["usertwo"].ToString())
+                        else if (label1.Text == row["userone"].ToString() && .Text == row["usertwo"].ToString())
                         {
                             UserControl3[i] = new UserControl3();
                             UserControl3[i].Dock = DockStyle.Top;
@@ -107,7 +112,63 @@ namespace Messaging_Application
                 }
             }
 
+        } 
+        */
+
+        private void bt_chat_Click(object sender, EventArgs e)
+        {
+            Texting_page textingPage = new Texting_page();
+            textingPage.LoggedInEmail = label1.Text; 
+            textingPage.Show();
+            this.Hide();  
         }
+
+
+        private void MessageChat()
+        {
+            SqlDataAdapter adapter;
+            adapter = new SqlDataAdapter("SELECT * FROM Chat", constring);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+            {
+                List<UserControl2> userControl2s = new List<UserControl2>();
+                List<UserControl3> userControl3s = new List<UserControl3>();
+
+                foreach (DataRow row in table.Rows)
+                {
+                    if (LoggedInEmail == row["userone"].ToString() && label2.Text == row["usertwo"].ToString() ||
+                        LoggedInEmail == row["usertwo"].ToString() && label2.Text == row["userone"].ToString())
+                    {
+                        if (LoggedInEmail == row["userone"].ToString())
+                        {
+                            UserControl2 userControl2 = new UserControl2();
+                            userControl2.Dock = DockStyle.Top;
+                            userControl2.BringToFront();
+                            userControl2.Title = row["message"].ToString();
+
+                            userControl2s.Add(userControl2);
+                            flowLayoutPanel2.Controls.Add(userControl2);
+                            flowLayoutPanel2.ScrollControlIntoView(userControl2);
+                        }
+                        else if (LoggedInEmail == row["usertwo"].ToString())
+                        {
+                            UserControl3 userControl3 = new UserControl3();
+                            userControl3.Dock = DockStyle.Top;
+                            userControl3.BringToFront();
+                            userControl3.Title = row["message"].ToString();
+                            userControl3.Icon = pictureBox2.Image;
+
+                            userControl3s.Add(userControl3);
+                            flowLayoutPanel2.Controls.Add(userControl3);
+                            flowLayoutPanel2.ScrollControlIntoView(userControl3);
+                        }
+                    }
+                }
+            }
+        }
+
         private void userControl12_Load(object sender, EventArgs e)
         {
             if(panel3.Visible == false && panel4.Visible == false && flowLayoutPanel2.Visible == false)

@@ -28,6 +28,8 @@ namespace Messaging_Application
             }
         }
 
+        public static object LoggedInUser { get; set; }
+
         public DataAcess(string  connectionString)
         {
             _connectionString= connectionString;
