@@ -34,7 +34,7 @@ namespace Messaging_Application
             Brush brush = Brushes.Black;
 
             g.DrawString("Token No: 001", font, brush, new PointF(10, 10));
-            g.DrawString("Name: John Doe", font, brush, new PointF(10, 40));
+            g.DrawString("Name: Md Foysal Bhuiyan", font, brush, new PointF(10, 40));
             g.DrawString("Date: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm"), font, brush, new PointF(10, 70));
         }
     }

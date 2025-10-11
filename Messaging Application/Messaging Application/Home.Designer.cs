@@ -69,7 +69,7 @@
             // 
             this.bt_chat.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_chat.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_chat.Location = new System.Drawing.Point(41, 135);
+            this.bt_chat.Location = new System.Drawing.Point(41, 141);
             this.bt_chat.Name = "bt_chat";
             this.bt_chat.Size = new System.Drawing.Size(134, 60);
             this.bt_chat.TabIndex = 8;

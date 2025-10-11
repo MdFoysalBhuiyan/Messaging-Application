@@ -51,7 +51,7 @@ namespace Messaging_Application
             this.Hide();
         }
 
-        private void Bt_chat_Click(object sender, EventArgs e)
+        private void bt_chat_Click(object sender, EventArgs e)
         {
             Chat chatform = new Chat();
             chatform.Show();
@@ -111,11 +111,6 @@ namespace Messaging_Application
                 MessageBox.Show("No user is logged in.");  // Display message if no user is logged in
             }
         }
-        private void bt_chat_Click(object sender, EventArgs e)
-        {
-            Texting_page textingPage = new Texting_page(label1.Text, pictureBox1.Image);  
-            textingPage.Show();
-            this.Hide(); 
-        }
+
     }
 }

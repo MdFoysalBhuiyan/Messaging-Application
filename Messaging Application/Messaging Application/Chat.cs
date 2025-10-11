@@ -21,7 +21,6 @@ namespace Messaging_Application
         {
 
         }
-
         private void btn_logout_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
@@ -54,7 +53,9 @@ namespace Messaging_Application
         }
         private void bt_Token_Click(object sender, EventArgs e)
         {
-
+            Token_Print token_Print = new Token_Print();
+            token_Print.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e) //button for customer care
