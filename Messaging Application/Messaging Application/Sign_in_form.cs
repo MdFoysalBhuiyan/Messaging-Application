@@ -10,6 +10,8 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Messaging_Application.Form2;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Messaging_Application
 {
@@ -55,8 +57,10 @@ namespace Messaging_Application
             {
                 MessageBox.Show("Invalid email or password.");
             }
-
-            Form2 form2 = new Form2();
+            string email = tb_email_login.Text;
+            //LoggedInUser.Email = email;
+            //Form2 form2 = new Form2();
+            Form2 form2 = new Form2(tb_email_login.Text.Trim());
             form2.Show();
             this.Hide();
         }

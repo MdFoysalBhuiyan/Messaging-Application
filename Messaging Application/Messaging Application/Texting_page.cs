@@ -64,9 +64,9 @@ namespace Messaging_Application
             SqlConnection con = new SqlConnection(ConnectionString);
             string q = "insert into Chat(userone,usertow,massage)values(@userone,@usertwo,@massage)";
             SqlCommand cmd = new SqlCommand(q, con);
-            cmd.Parameters.AddWithValue("@userone", labelText.Text);
+            cmd.Parameters.AddWithValue("@userone", label3.Text);
             cmd.Parameters.AddWithValue("@usertwo", label2.Text);
-            cmd.Parameters.AddWithValue("@massage", Label1.Text);
+            cmd.Parameters.AddWithValue("@massage", label3.Text);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
@@ -75,11 +75,11 @@ namespace Messaging_Application
             // textBox1.Clear();
         }
 
-        /*
+        
         private void MessageChat()
         {
             SqlDataAdapter adapter;
-            adapter = new SqlDataAdapter("select * from Chat", constring);
+            adapter = new SqlDataAdapter("select * from Chat", ConnectionString);
             DataTable table = new DataTable();
             adapter.Fill(table);
 
@@ -92,27 +92,27 @@ namespace Messaging_Application
                 {
                     foreach (DataRow row in table.Rows)
                     {
-                        if (label1.Text == row["userone"].ToString() && .Text == row["usetwo"].ToString())
+                        if (label3.Text == row["userone"].ToString() && label2.Text == row["usetwo"].ToString())
                         {
-                            UserControl2[i] = new UserControl2();
-                            UserControl2[i].Dock = DockStyle.Top;
-                            UserControl2[i].BringToFront();
-                            UserControl2[i].Title = row["massage"].ToString();
+                            userControl2s[i] = new UserControl2();
+                            userControl2s[i].Dock = DockStyle.Top;
+                            userControl2s[i].BringToFront();
+                            userControl2s[i].Title = row["massage"].ToString();
 
-                            flowLayoutPanel2.Controls.Add(UserControl2[i]);
-                            flowLayoutPanel2.ScrollControlIntoView(UserControl2[i]);
+                            flowLayoutPanel2.Controls.Add(userControl2s[i]);
+                            flowLayoutPanel2.ScrollControlIntoView(userControl2s[i]);
                         }
 
-                        else if (label1.Text == row["userone"].ToString() && .Text == row["usertwo"].ToString())
+                        else if (label3.Text == row["userone"].ToString() && label2.Text == row["usertwo"].ToString())
                         {
-                            UserControl3[i] = new UserControl3();
-                            UserControl3[i].Dock = DockStyle.Top;
-                            UserControl3[i].BringToFront();
-                            UserControl3[i].Title = row["massage"].ToString();
-                            UserControl3[i].Icon = pictureBox2.Image; 
+                            userControl3s[i] = new UserControl3();
+                            userControl3s[i].Dock = DockStyle.Top;
+                            userControl3s[i].BringToFront();
+                            userControl3s[i].Title = row["massage"].ToString();
+                            userControl3s[i].Icon = pictureBox2.Image; 
 
-                            flowLayoutPanel2.Controls.Add(UserControl3[i]);
-                            flowLayoutPanel2.ScrollControlIntoView(UserControl3[i]);
+                            flowLayoutPanel2.Controls.Add(userControl3s[i]);
+                            flowLayoutPanel2.ScrollControlIntoView(userControl3s[i]);
 
 
                         }
@@ -121,10 +121,10 @@ namespace Messaging_Application
             }
 
         } 
-        */
+       
 
 
-        private void MessageChat()
+      /*  private void MessageChat()
         {
             SqlDataAdapter adapter;
             adapter = new SqlDataAdapter("select * from Chat", ConnectionString);
@@ -166,7 +166,7 @@ namespace Messaging_Application
                     }
                 }
             }
-        }
+        } */
 
         private void userControl12_Load(object sender, EventArgs e)
         {

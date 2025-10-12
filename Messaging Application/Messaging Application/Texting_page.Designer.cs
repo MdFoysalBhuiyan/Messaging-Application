@@ -46,12 +46,15 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.userControl21 = new Messaging_Application.UserControl2();
             this.userControl31 = new Messaging_Application.UserControl3();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // bt_chat
@@ -105,6 +108,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.userControl12);
+            this.flowLayoutPanel1.Controls.Add(this.panel5);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(864, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -234,9 +238,28 @@
             this.userControl31.Icon = null;
             this.userControl31.Location = new System.Drawing.Point(3, 67);
             this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(390, 48);
+            this.userControl31.Size = new System.Drawing.Size(390, 20);
             this.userControl31.TabIndex = 1;
             this.userControl31.Title = null;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Location = new System.Drawing.Point(3, 125);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(381, 114);
+            this.panel5.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(139, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 24);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "label3";
             // 
             // Texting_page
             // 
@@ -263,6 +286,8 @@
             this.panel4.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,5 +313,7 @@
         private UserControl2 userControl21;
         private UserControl3 userControl31;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label3;
     }
 }

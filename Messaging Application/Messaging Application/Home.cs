@@ -15,15 +15,22 @@ namespace Messaging_Application
     public partial class Form2 : Form
     {
         public string LabelText
+       //string LoggedInUser 
         {
             get { return label1.Text; }
         }
-        //private User CurrentUser;
+    
         public Form2()
         {
             InitializeComponent();
             //CurrentUser = user;
         }
+        public Form2(string email)
+        {
+            InitializeComponent();
+            LoggedInUser = email; 
+        }
+
         public string ConnectionString = "Data Source=DESKTOP-ECS1L4V\\SQLEXPRESS;Initial Catalog=Text;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
         //Here need to add datareader to show user details
 
@@ -66,52 +73,39 @@ namespace Messaging_Application
            form2.Show();
            this.Hide();
         }
-
         private void Form2_Load(object sender, EventArgs e)
         {
             if (LoggedInUser != null)
             {
-                label1.Text = LoggedInUser.ToString(); 
-
-                //string connstring = DataAcess.ConnectionString;
-
                 string connstring = ConnectionString;
-                //string query = "Select * from Log_in, Image FROM Log_in WHERE Email = @Email";
-                string query = "Select * from Log_in";
+                string query = "SELECT Full_Name, Image FROM Log_in WHERE Email = @Email";
 
                 using (SqlConnection con = new SqlConnection(connstring))
+                using (SqlCommand cmd = new SqlCommand(query, con))
                 {
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@Email", LoggedInUser.ToString()); 
-                    try
-                    {
-                        con.Open();
-                        SqlDataReader dr = cmd.ExecuteReader();
-                        if (dr.Read())
-                        {
-                            label1.Text = dr["Full_Name"].ToString();  
+                    cmd.Parameters.AddWithValue("@Email", LoggedInUser.ToString());
 
-                            byte[] imageBytes = dr["Image"] as byte[];
-                            if (imageBytes != null)
-                            {
-                                MemoryStream ms = new MemoryStream(imageBytes);
-                                pictureBox1.Image = Image.FromStream(ms);
-                            }
-                            else
-                            {
-                                pictureBox1.Image = null;  
-                            }
-                        }
-                    }
-                    catch (Exception ex)
+                    con.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    if (dr.Read())
                     {
-                        MessageBox.Show("Error: " + ex.Message);  
+                        label1.Text = dr["Full_Name"].ToString();
+
+                        string imagePath = dr["Image"].ToString();
+                        if (File.Exists(imagePath))
+                        {
+                            pictureBox1.Image = Image.FromFile(imagePath);
+                        }
+                        else
+                        {
+                            pictureBox1.Image = null;
+                        }
                     }
                 }
             }
             else
             {
-                MessageBox.Show("No user is logged in."); 
+                MessageBox.Show("No user is logged in.");
             }
         }
 
