@@ -62,11 +62,11 @@ namespace Messaging_Application
         private void btn_send_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(ConnectionString);
-            string q = "insert into chat(userone,usertow,massage)values(@userone,@usertwo,@massage)";
+            string q = "insert into Chat(userone,usertow,massage)values(@userone,@usertwo,@massage)";
             SqlCommand cmd = new SqlCommand(q, con);
-            cmd.Parameters.AddWithValue("@userone", UserImage);
+            cmd.Parameters.AddWithValue("@userone", labelText.Text);
             cmd.Parameters.AddWithValue("@usertwo", label2.Text);
-            cmd.Parameters.AddWithValue("@massage", pictureBox2.Text);
+            cmd.Parameters.AddWithValue("@massage", Label1.Text);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
@@ -127,7 +127,7 @@ namespace Messaging_Application
         private void MessageChat()
         {
             SqlDataAdapter adapter;
-            adapter = new SqlDataAdapter("select * from Chat", constring);
+            adapter = new SqlDataAdapter("select * from Chat", ConnectionString);
             DataTable table = new DataTable();
 
             if (table.Rows.Count > 0)

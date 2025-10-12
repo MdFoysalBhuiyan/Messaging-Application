@@ -129,7 +129,9 @@ namespace Messaging_Application
             //string connstring = DataAcess.ConnectionString;
 
             SqlConnection con = new SqlConnection(connstring);
-            string q = "Insert Log_in(Full_Name,Email,Password,Confirm_Password,Image)values(@Full_Name,@Email,@Password,@Confirm_Passord,@Image)";
+            //string q = "Insert Log_in(Full_Name,Email,Password,Confirm_Password,Image)values(@Full_Name,@Email,@Password,@Confirm_Passord,@Image)";
+            string q = $"Insert into Log_in(Full_Name, Email, Password, Confirm_Password, Image)\r\nvalues('{tbFullname.Text}', '{tb_email.Text}', '{tb_password.Text}', '{tb_con_pass.Text}', '{pictureBox2.Text}');\r\n";
+            
             SqlCommand cmd = new SqlCommand(q);
             cmd.Parameters.AddWithValue("@Full_Name", tbFullname.Text);
             cmd.Parameters.AddWithValue("@Email", tb_email.Text);

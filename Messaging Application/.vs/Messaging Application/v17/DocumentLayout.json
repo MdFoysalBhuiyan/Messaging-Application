@@ -3,7 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|c:\\users\\ifti ahmed\\desktop\\all codes\\github\\messaging-application\\messaging application\\messaging application\\texting_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|c:\\users\\ifti ahmed\\desktop\\all codes\\github\\messaging-application\\messaging application\\messaging application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|solutionrelative:messaging application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|solutionrelative:messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|solutionrelative:messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\Messaging Application.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\Messaging Application.csproj|solutionrelative:messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\sign_in_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|solutionrelative:messaging application\\sign_in_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\texting_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|solutionrelative:messaging application\\texting_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -14,19 +34,7 @@
       "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|solutionrelative:messaging application\\texting_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|solutionrelative:messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_ECS1L4V_SQLEXPRESS/Text/True/SqlTable/dbo.Log_in.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|solutionrelative:messaging application\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\sign_in_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|solutionrelative:messaging application\\sign_in_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -59,10 +67,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|solutionrelative:messaging application\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|solutionrelative:messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\UI.Layer.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\token_print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,10 +137,6 @@
       "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\Messaging Application.csproj|solutionrelative:messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\Messaging Application.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\Messaging Application.csproj|solutionrelative:messaging application\\sign_up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\Messaging Application.csproj|C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\messaging application\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2CC2254-26C2-49C5-AF9F-9A77D97B1BBB}|Messaging Application\\Messaging Application.csproj|solutionrelative:messaging application\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -148,7 +148,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -164,16 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Chat.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_ECS1L4V_SQLEXPRESS/Text/True/SqlTable/dbo.Chat.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_ECS1L4V_SQLEXPRESS/Text/True/SqlTable/dbo.Chat.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-10-11T20:38:47.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\App.config",
               "RelativeDocumentMoniker": "Messaging Application\\App.config",
@@ -181,11 +172,12 @@
               "RelativeToolTip": "Messaging Application\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAACTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-19T16:18:00.319Z"
+              "WhenOpened": "2025-09-19T16:18:00.319Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "DataAcess.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Data.Layer\\DataAcess.cs",
               "RelativeDocumentMoniker": "Data.Layer\\DataAcess.cs",
@@ -197,31 +189,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Sign_in_form.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_in_form.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Sign_in_form.cs",
               "ToolTip": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_in_form.cs",
               "RelativeToolTip": "Messaging Application\\Sign_in_form.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T17:58:42.344Z"
+              "WhenOpened": "2025-09-19T17:58:42.344Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Home.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Home.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Home.cs",
               "ToolTip": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Home.cs",
               "RelativeToolTip": "Messaging Application\\Home.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAAEoAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T12:07:57.418Z"
+              "WhenOpened": "2025-09-20T12:07:57.418Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Setting.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Setting.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Setting.cs",
@@ -233,19 +227,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Sign_Up.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_Up.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Sign_Up.cs",
               "ToolTip": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_Up.cs",
               "RelativeToolTip": "Messaging Application\\Sign_Up.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAACsAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAswI0AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T04:37:34.508Z"
+              "WhenOpened": "2025-09-19T04:37:34.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "dbo.Log_in.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_ECS1L4V_SQLEXPRESS/Text/True/SqlTable/dbo.Log_in.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_ECS1L4V_SQLEXPRESS/Text/True/SqlTable/dbo.Log_in.sql",
@@ -254,20 +249,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Texting_page.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Texting_page.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Texting_page.cs",
               "ToolTip": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Texting_page.cs",
               "RelativeToolTip": "Messaging Application\\Texting_page.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAewEYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T12:12:20.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-20T12:12:20.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Setting.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Setting.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Setting.cs",
@@ -279,6 +273,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Sign_Up.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_Up.cs",
+              "RelativeDocumentMoniker": "Messaging Application\\Sign_Up.cs",
+              "ToolTip": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_Up.cs [Design]",
+              "RelativeToolTip": "Messaging Application\\Sign_Up.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T04:37:34.826Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.Chat.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_ECS1L4V_SQLEXPRESS/Text/True/SqlTable/dbo.Chat.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_ECS1L4V_SQLEXPRESS/Text/True/SqlTable/dbo.Chat.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-10-11T20:38:47.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Texting_page.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Texting_page.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Texting_page.cs",
@@ -289,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "UserControl1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\UserControl1.Designer.cs",
               "RelativeDocumentMoniker": "Messaging Application\\UserControl1.Designer.cs",
@@ -301,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Sign_Up.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_Up.Designer.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Sign_Up.Designer.cs",
@@ -309,11 +324,12 @@
               "RelativeToolTip": "Messaging Application\\Sign_Up.Designer.cs",
               "ViewState": "AgIAAJMAAAAAAAAAAAAAAKoAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T20:05:37.696Z"
+              "WhenOpened": "2025-10-11T20:05:37.696Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Setting.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Setting.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Setting.cs",
@@ -325,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "UserControl1.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\UserControl1.cs",
               "RelativeDocumentMoniker": "Messaging Application\\UserControl1.cs",
@@ -337,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Token_Print.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Token_Print.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Token_Print.cs",
@@ -349,18 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Sign_Up.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_Up.cs",
-              "RelativeDocumentMoniker": "Messaging Application\\Sign_Up.cs",
-              "ToolTip": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_Up.cs [Design]",
-              "RelativeToolTip": "Messaging Application\\Sign_Up.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T04:37:34.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Chat.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Chat.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Chat.cs",
@@ -372,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Token_Print.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Token_Print.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Token_Print.cs",
@@ -383,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Form1.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Form1.cs",
@@ -394,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Chat.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Chat.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Chat.cs",
@@ -405,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "UserControl1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\UserControl1.cs",
               "RelativeDocumentMoniker": "Messaging Application\\UserControl1.cs",
@@ -416,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Texting_page.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Texting_page.Designer.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Texting_page.Designer.cs",
@@ -428,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Usercontrol11.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Usercontrol11.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Usercontrol11.cs",
@@ -440,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Business.Layer\\User.cs",
               "RelativeDocumentMoniker": "Business.Layer\\User.cs",
@@ -452,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Form1.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Form1.cs",
@@ -464,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\App.config",
               "RelativeDocumentMoniker": "Messaging Application\\App.config",
@@ -476,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Form1.Designer.cs",
@@ -488,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Sign_in_form.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_in_form.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Sign_in_form.cs",
@@ -499,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Sign_Up.cs",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_Up.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Sign_Up.cs",
@@ -523,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Chat.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Chat.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Chat.cs",
@@ -534,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Setting.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Setting.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Setting.cs",
@@ -545,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Form1.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Form1.cs",
@@ -556,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 3,
               "Title": "Sign_Up.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ifti Ahmed\\Desktop\\All Codes\\GIthub\\Messaging-Application\\Messaging Application\\Messaging Application\\Sign_Up.cs",
               "RelativeDocumentMoniker": "Messaging Application\\Sign_Up.cs",

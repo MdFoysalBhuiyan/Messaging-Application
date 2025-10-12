@@ -14,6 +14,10 @@ namespace Messaging_Application
 {
     public partial class Form2 : Form
     {
+        public string LabelText
+        {
+            get { return label1.Text; }
+        }
         //private User CurrentUser;
         public Form2()
         {
@@ -31,7 +35,6 @@ namespace Messaging_Application
         {
 
         }
-
         private void btn_logout_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
@@ -73,13 +76,13 @@ namespace Messaging_Application
                 //string connstring = DataAcess.ConnectionString;
 
                 string connstring = ConnectionString;
-                string query = "SELECT Full_Name, Image FROM Log_in WHERE Email = @Email";
+                //string query = "Select * from Log_in, Image FROM Log_in WHERE Email = @Email";
+                string query = "Select * from Log_in";
 
                 using (SqlConnection con = new SqlConnection(connstring))
                 {
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@Email", LoggedInUser.ToString()); 
-
                     try
                     {
                         con.Open();
