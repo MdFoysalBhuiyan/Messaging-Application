@@ -39,5 +39,10 @@ namespace Messaging_Application
         {
 
         }
+
+        private void UserControl2_Load(object sender, EventArgs e)
+        {
+            AddHeighttext();
+        }
     }
 }

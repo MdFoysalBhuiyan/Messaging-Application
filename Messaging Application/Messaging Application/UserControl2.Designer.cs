@@ -36,7 +36,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(398, 49);
+            this.label1.Size = new System.Drawing.Size(461, 80);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
@@ -47,7 +47,8 @@
             this.AutoSize = true;
             this.Controls.Add(this.label1);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(409, 66);
+            this.Size = new System.Drawing.Size(474, 101);
+            this.Load += new System.EventHandler(this.UserControl2_Load);
             this.ResumeLayout(false);
 
         }

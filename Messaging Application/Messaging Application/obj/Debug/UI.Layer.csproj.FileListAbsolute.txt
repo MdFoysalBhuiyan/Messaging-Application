@@ -50,3 +50,4 @@ C:\Users\HP\Documents\GitHub\Messaging-Application\Messaging Application\Messagi
 >>>>>>> d3d3faf7f01035e7ee06ba652912267223ce5be8
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Token_Print.resources
 C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.UserControl3.resources
+C:\Users\Ifti Ahmed\Desktop\All Codes\GIthub\Messaging-Application\Messaging Application\Messaging Application\obj\Debug\Messaging_Application.Support.resources

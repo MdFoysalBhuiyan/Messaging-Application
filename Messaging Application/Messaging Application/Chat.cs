@@ -70,10 +70,9 @@ namespace Messaging_Application
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Texting_page texting_Page = new Texting_page(LoggedInUser);
-            texting_Page.Show();
+            Support supportform = new Support(LoggedInUser);
+            supportform.Show();
             this.Hide();
-
         }
 
         private void button2_Click(object sender, EventArgs e)

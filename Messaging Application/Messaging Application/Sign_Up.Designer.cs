@@ -45,6 +45,7 @@
             this.cb = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_logout = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -231,6 +232,10 @@
             this.btn_logout.Text = "Log out";
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Sign_Up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,5 +289,6 @@
         private System.Windows.Forms.ComboBox cb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label btn_logout;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

@@ -27,6 +27,7 @@ namespace Messaging_Application
             LoggedInUser = email;
             //UserImage = userImage;  
             //labelSender.Text = LoggedInUser;
+            labelReceiver.Text = GetReceiverEmail(LoggedInUser);
         }
 
         public string LoggedInUser { get; set; }
@@ -237,6 +238,40 @@ namespace Messaging_Application
             labelReceiver.Text = Control.Text1;
             pictureBox2.Image = Control.Image1;
             MessageChat();
+        }
+
+        private string GetReceiverEmail(string senderEmail)
+        {
+            string receiverEmail = "";
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                string query = @"
+                SELECT TOP 1 
+                    CASE 
+                        WHEN Chat2.Sender = @Sender THEN Chat2.Receiver
+                        ELSE Chat2.Sender 
+                    END AS ReceiverEmail
+                FROM Chat2
+                WHERE (Chat2.Sender = @Sender OR Chat2.Receiver = @Sender)
+                AND Chat2.Sender != @Sender
+                ORDER BY Chat2.Timestamp DESC";
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@Sender", senderEmail);
+
+                    con.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        receiverEmail = reader["ReceiverEmail"].ToString(); 
+                    }
+                    con.Close();
+                }
+            }
+
+            return receiverEmail;
         }
 
         private void Texting_page_Load(object sender, EventArgs e)

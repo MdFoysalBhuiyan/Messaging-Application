@@ -37,6 +37,16 @@ namespace Messaging_Application
                 //pictureBox1_form_chat.Image = value; // Update the picture
             }
         }
+        private Image _icon;
+        public Image Icon
+        {
+            get { return _icon; }
+            set
+            {
+                _icon = value;
+                pictureBox1.Image = value;
+            }
+        }
         private void UserControl1_Load(object sender, EventArgs e)
         {
 
