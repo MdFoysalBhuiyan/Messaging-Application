@@ -20,12 +20,16 @@ namespace Messaging_Application
         public string ConnectionString = "Data Source=DESKTOP-ECS1L4V\\SQLEXPRESS;Initial Catalog=Text;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
         public string LoggedInEmail { get; set; }
         public Image UserImage { get; set; } 
-        public Texting_page(string email, Image userImage)
+        public Texting_page(string email)
         {
             InitializeComponent();
-            LoggedInEmail = email; 
-            UserImage = userImage;  
+            //LoggedInEmail = email; 
+            LoggedInUser = email;
+            //UserImage = userImage;  
+            //labelSender.Text = LoggedInUser;
         }
+
+        public string LoggedInUser { get; set; }
 
         public Texting_page()
         {
@@ -47,7 +51,7 @@ namespace Messaging_Application
 
         private void Bt_chat_Click(object sender, EventArgs e)
         {
-            Chat chatform = new Chat();
+            Chat chatform = new Chat(LoggedInUser);
             chatform.Show();
             this.Hide();
         }
@@ -63,6 +67,7 @@ namespace Messaging_Application
         {
 
             string senderUser = labelSender.Text;
+            //string senderUser = LoggedInUser;
             string receiverUser = labelReceiver.Text;
             string message = txt_box_for_type.Text;
 
@@ -71,8 +76,8 @@ namespace Messaging_Application
 
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
-                string query = "INSERT INTO Chat2 (Sender, Receiver, Message) VALUES (@Sender, @Receiver, @Message)";
-                SqlCommand cmd = new SqlCommand(query, con);
+                string q = "INSERT INTO Chat2 (Sender, Receiver, Message) VALUES (@Sender, @Receiver, @Message)";
+                SqlCommand cmd = new SqlCommand(q, con);
                 cmd.Parameters.AddWithValue("@Sender", senderUser);
                 cmd.Parameters.AddWithValue("@Receiver", receiverUser);
                 cmd.Parameters.AddWithValue("@Message", message);
@@ -129,8 +134,6 @@ namespace Messaging_Application
                 con.Close();
             }
         }
-
-
         private void MessageChat()
         {
             SqlDataAdapter adapter;
@@ -234,6 +237,34 @@ namespace Messaging_Application
             labelReceiver.Text = Control.Text1;
             pictureBox2.Image = Control.Image1;
             MessageChat();
+        }
+
+        private void Texting_page_Load(object sender, EventArgs e)
+        {
+            //timer3.Start();
+
+            if (LoggedInUser != null)
+            {
+                string connstring = ConnectionString;
+                string query = "SELECT Full_Name, Image FROM Log_in WHERE Email = @Email";
+
+                using (SqlConnection con = new SqlConnection(connstring))
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@Email", LoggedInUser.ToString());
+
+                    con.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        labelSender.Text = dr["Full_Name"].ToString();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("No user is logged in.");
+            }
         }
 
 

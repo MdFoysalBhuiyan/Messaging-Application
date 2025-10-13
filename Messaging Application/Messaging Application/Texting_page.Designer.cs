@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.bt_chat = new System.Windows.Forms.Button();
             this.bt_setting = new System.Windows.Forms.Button();
             this.bt_home = new System.Windows.Forms.Button();
             this.btn_logout = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.userControl12 = new Messaging_Application.UserControl1();
             this.panel5 = new System.Windows.Forms.Panel();
             this.labelSender = new System.Windows.Forms.Label();
-            this.userControl11 = new Messaging_Application.UserControl1();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -46,9 +45,15 @@
             this.txt_box_for_type = new System.Windows.Forms.TextBox();
             this.btn_send = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.userControl21 = new Messaging_Application.UserControl2();
             this.userControl31 = new Messaging_Application.UserControl3();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.userControl12 = new Messaging_Application.UserControl1();
+            this.userControl11 = new Messaging_Application.UserControl1();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -116,17 +121,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(384, 641);
             this.flowLayoutPanel1.TabIndex = 26;
             // 
-            // userControl12
-            // 
-            this.userControl12.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.userControl12.Image1 = null;
-            this.userControl12.Location = new System.Drawing.Point(3, 3);
-            this.userControl12.Name = "userControl12";
-            this.userControl12.Size = new System.Drawing.Size(381, 116);
-            this.userControl12.TabIndex = 0;
-            this.userControl12.Text1 = null;
-            this.userControl12.Load += new System.EventHandler(this.userControl12_Load);
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -145,16 +139,6 @@
             this.labelSender.Size = new System.Drawing.Size(60, 24);
             this.labelSender.TabIndex = 0;
             this.labelSender.Text = "label3";
-            // 
-            // userControl11
-            // 
-            this.userControl11.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.userControl11.Image1 = null;
-            this.userControl11.Location = new System.Drawing.Point(3, 3);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(8, 8);
-            this.userControl11.TabIndex = 0;
-            this.userControl11.Text1 = null;
             // 
             // panel1
             // 
@@ -175,6 +159,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.labelReceiver);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(156, 3);
@@ -242,11 +227,31 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(705, 458);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
+            this.listBox1.Location = new System.Drawing.Point(3, 3);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(723, 680);
+            this.listBox1.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(274, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(311, 31);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Customer Care Person";
+            // 
             // userControl21
             // 
             this.userControl21.AutoSize = true;
             this.userControl21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.userControl21.Location = new System.Drawing.Point(3, 539);
+            this.userControl21.Location = new System.Drawing.Point(3, 689);
             this.userControl21.Name = "userControl21";
             this.userControl21.Size = new System.Drawing.Size(404, 58);
             this.userControl21.TabIndex = 0;
@@ -257,19 +262,40 @@
             this.userControl31.BackColor = System.Drawing.SystemColors.ControlLight;
             this.userControl31.Dock = System.Windows.Forms.DockStyle.Top;
             this.userControl31.Icon = null;
-            this.userControl31.Location = new System.Drawing.Point(3, 603);
+            this.userControl31.Location = new System.Drawing.Point(3, 753);
             this.userControl31.Name = "userControl31";
             this.userControl31.Size = new System.Drawing.Size(390, 20);
             this.userControl31.TabIndex = 1;
             this.userControl31.Title = null;
             // 
-            // listBox1
+            // userControl12
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(3, 3);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(699, 524);
-            this.listBox1.TabIndex = 2;
+            this.userControl12.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.userControl12.Image1 = null;
+            this.userControl12.Location = new System.Drawing.Point(3, 3);
+            this.userControl12.Name = "userControl12";
+            this.userControl12.Size = new System.Drawing.Size(381, 116);
+            this.userControl12.TabIndex = 0;
+            this.userControl12.Text1 = null;
+            this.userControl12.Load += new System.EventHandler(this.userControl12_Load);
+            // 
+            // userControl11
+            // 
+            this.userControl11.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.userControl11.Image1 = null;
+            this.userControl11.Location = new System.Drawing.Point(3, 3);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(8, 8);
+            this.userControl11.TabIndex = 0;
+            this.userControl11.Text1 = null;
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 2000;
+            // 
+            // timer3
+            // 
+            this.timer3.Interval = 3000;
             // 
             // Texting_page
             // 
@@ -287,6 +313,7 @@
             this.Controls.Add(this.bt_chat);
             this.Name = "Texting_page";
             this.Text = "Texting_page";
+            this.Load += new System.EventHandler(this.Texting_page_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -326,5 +353,9 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label labelSender;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
     }
 }

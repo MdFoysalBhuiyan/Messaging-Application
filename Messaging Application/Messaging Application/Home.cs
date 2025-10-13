@@ -63,7 +63,7 @@ namespace Messaging_Application
 
         private void bt_chat_Click(object sender, EventArgs e)
         {
-            Chat chatform = new Chat();
+            Chat chatform = new Chat(LoggedInUser);
             chatform.Show();
             this.Hide();
         }

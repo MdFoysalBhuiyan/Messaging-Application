@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Messaging_Application
 {
     public partial class Chat : Form
     {
-        public Chat()
+        public string LoggedInUser { get; set; }
+        public Chat(string email)
         {
             InitializeComponent();
+            LoggedInUser = email;
         }
 
         private void Chat_Load(object sender, EventArgs e)
@@ -41,7 +44,7 @@ namespace Messaging_Application
         }
         private void bt_chat_Click(object sender, EventArgs e)
         {
-            Chat chatform = new Chat();
+            Chat chatform = new Chat(LoggedInUser);
             chatform.Show();
             this.Hide();
         }
@@ -60,14 +63,14 @@ namespace Messaging_Application
 
         private void button3_Click(object sender, EventArgs e) //button for customer care
         {
-            Texting_page texting_Page = new Texting_page();
+            Texting_page texting_Page = new Texting_page(LoggedInUser);
             texting_Page.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Texting_page texting_Page = new Texting_page();
+            Texting_page texting_Page = new Texting_page(LoggedInUser);
             texting_Page.Show();
             this.Hide();
 
@@ -75,7 +78,7 @@ namespace Messaging_Application
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Texting_page texting_Page = new Texting_page();
+            Texting_page texting_Page = new Texting_page(LoggedInUser);
             texting_Page.Show();
             this.Hide();
 
