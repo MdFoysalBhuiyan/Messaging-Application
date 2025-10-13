@@ -28,7 +28,7 @@ namespace Messaging_Application
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            // Example dummy data (replace later with DB values)
+            // Example dummy data (for now will be replace by database connection later)
             Graphics g = e.Graphics;
             Font font = new Font("Arial", 12, FontStyle.Bold);
             Brush brush = Brushes.Black;

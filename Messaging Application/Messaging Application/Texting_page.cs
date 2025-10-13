@@ -71,12 +71,11 @@ namespace Messaging_Application
 
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
-                string query = "INSERT INTO Chat (Sender, Receiver, Message) VALUES (@Sender, @Receiver, @Message)";
+                string query = "INSERT INTO Chat2 (Sender, Receiver, Message) VALUES (@Sender, @Receiver, @Message)";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@Sender", senderUser);
                 cmd.Parameters.AddWithValue("@Receiver", receiverUser);
                 cmd.Parameters.AddWithValue("@Message", message);
-
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -102,14 +101,13 @@ namespace Messaging_Application
             */
 
         }
-
         private void DisplayMessages(string senderUser, string receiverUser)
         {
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
                 string query = @"
             SELECT Sender, Message, Timestamp 
-            FROM Chat 
+            FROM Chat2 
             WHERE (Sender = @Sender AND Receiver = @Receiver) 
                OR (Sender = @Receiver AND Receiver = @Sender)
             ORDER BY Timestamp";
@@ -125,8 +123,8 @@ namespace Messaging_Application
 
                 while (reader.Read())
                 {
-                    string chat = $"{reader["Sender"]}: {reader["Message"]} ({reader["Timestamp"]})";
-                    listBox1.Items.Add(chat);
+                    string Chat2 = $"{reader["Sender"]}: {reader["Message"]} ({reader["Timestamp"]})";
+                    listBox1.Items.Add(Chat2);
                 }
                 con.Close();
             }
@@ -136,7 +134,7 @@ namespace Messaging_Application
         private void MessageChat()
         {
             SqlDataAdapter adapter;
-            adapter = new SqlDataAdapter("select * from Chat", ConnectionString);
+            adapter = new SqlDataAdapter("select * from Chat2", ConnectionString);
             DataTable table = new DataTable();
             adapter.Fill(table);
 
@@ -154,7 +152,7 @@ namespace Messaging_Application
                             userControl2s[i] = new UserControl2();
                             userControl2s[i].Dock = DockStyle.Top;
                             userControl2s[i].BringToFront();
-                            userControl2s[i].Title = row["massage"].ToString();
+                            userControl2s[i].Title = row["Message"].ToString();
 
                             flowLayoutPanel2.Controls.Add(userControl2s[i]);
                             flowLayoutPanel2.ScrollControlIntoView(userControl2s[i]);
@@ -165,7 +163,7 @@ namespace Messaging_Application
                             userControl3s[i] = new UserControl3();
                             userControl3s[i].Dock = DockStyle.Top;
                             userControl3s[i].BringToFront();
-                            userControl3s[i].Title = row["massage"].ToString();
+                            userControl3s[i].Title = row["Message"].ToString();
                             userControl3s[i].Icon = pictureBox2.Image; 
 
                             flowLayoutPanel2.Controls.Add(userControl3s[i]);
@@ -178,8 +176,6 @@ namespace Messaging_Application
             }
 
         } 
-       
-
 
       /*  private void MessageChat()
         {
