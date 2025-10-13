@@ -61,21 +61,78 @@ namespace Messaging_Application
 
         private void btn_send_Click(object sender, EventArgs e)
         {
+
+            string senderUser = labelSender.Text;
+            string receiverUser = labelReceiver.Text;
+            string message = txt_box_for_type.Text;
+
+            if (string.IsNullOrWhiteSpace(message))
+                return;
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                string query = "INSERT INTO Chat (Sender, Receiver, Message) VALUES (@Sender, @Receiver, @Message)";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Sender", senderUser);
+                cmd.Parameters.AddWithValue("@Receiver", receiverUser);
+                cmd.Parameters.AddWithValue("@Message", message);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+
+            txt_box_for_type.Clear();
+            DisplayMessages(senderUser, receiverUser); 
+
+
+            /*
             SqlConnection con = new SqlConnection(ConnectionString);
             string q = "insert into Chat(userone,usertow,massage)values(@userone,@usertwo,@massage)";
             SqlCommand cmd = new SqlCommand(q, con);
-            cmd.Parameters.AddWithValue("@userone", label3.Text);
-            cmd.Parameters.AddWithValue("@usertwo", label2.Text);
-            cmd.Parameters.AddWithValue("@massage", label3.Text);
+            cmd.Parameters.AddWithValue("@userone", labelSender.Text);
+            cmd.Parameters.AddWithValue("@usertwo", labelReceiver.Text);
+            cmd.Parameters.AddWithValue("@massage", labelSender.Text);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
             MessageChat();
             //UserImage.Clear();
             // textBox1.Clear();
+            */
+
         }
 
-        
+        private void DisplayMessages(string senderUser, string receiverUser)
+        {
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                string query = @"
+            SELECT Sender, Message, Timestamp 
+            FROM Chat 
+            WHERE (Sender = @Sender AND Receiver = @Receiver) 
+               OR (Sender = @Receiver AND Receiver = @Sender)
+            ORDER BY Timestamp";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Sender", senderUser);
+                cmd.Parameters.AddWithValue("@Receiver", receiverUser);
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                listBox1.Items.Clear();
+
+                while (reader.Read())
+                {
+                    string chat = $"{reader["Sender"]}: {reader["Message"]} ({reader["Timestamp"]})";
+                    listBox1.Items.Add(chat);
+                }
+                con.Close();
+            }
+        }
+
+
         private void MessageChat()
         {
             SqlDataAdapter adapter;
@@ -92,7 +149,7 @@ namespace Messaging_Application
                 {
                     foreach (DataRow row in table.Rows)
                     {
-                        if (label3.Text == row["userone"].ToString() && label2.Text == row["usetwo"].ToString())
+                        if (labelSender.Text == row["userone"].ToString() && labelReceiver.Text == row["usetwo"].ToString())
                         {
                             userControl2s[i] = new UserControl2();
                             userControl2s[i].Dock = DockStyle.Top;
@@ -103,7 +160,7 @@ namespace Messaging_Application
                             flowLayoutPanel2.ScrollControlIntoView(userControl2s[i]);
                         }
 
-                        else if (label3.Text == row["userone"].ToString() && label2.Text == row["usertwo"].ToString())
+                        else if (labelSender.Text == row["userone"].ToString() && labelReceiver.Text == row["usertwo"].ToString())
                         {
                             userControl3s[i] = new UserControl3();
                             userControl3s[i].Dock = DockStyle.Top;
@@ -178,7 +235,7 @@ namespace Messaging_Application
             }
 
             UserControl1 Control = (UserControl1)sender;
-            label2.Text = Control.Text1;
+            labelReceiver.Text = Control.Text1;
             pictureBox2.Image = Control.Image1;
             MessageChat();
         }

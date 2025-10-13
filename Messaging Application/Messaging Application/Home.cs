@@ -95,11 +95,11 @@ namespace Messaging_Application
                         if (File.Exists(imagePath))
                         {
                             pictureBox1.Image = Image.FromFile(imagePath);
-                        }
+                        } 
                         else
                         {
                             pictureBox1.Image = null;
-                        }
+                        } 
                     }
                 }
             }
