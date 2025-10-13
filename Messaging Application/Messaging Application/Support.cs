@@ -30,7 +30,7 @@ namespace Messaging_Application
         {
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
-            string q = "INSERT INTO Chat (userone, usertwo, massage) VALUES (@userone, @usertwo, @massage)";
+            string q = "INSERT INTO Chat(userone, usertwo, massage) VALUES (@userone, @usertwo, @massage)";
             SqlCommand cmd = new SqlCommand(q, con);
             
             cmd.Parameters.AddWithValue("@userone", LoggedInUser);
